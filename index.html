@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCraft HTML5 - Play Online</title>
+    <!-- Font Awesome for clean icon glyphs (No emojis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --sc-blue: #00d2ff;
+            --sc-green: #2ecc71;
+            --sc-gold: #ffcc00;
+            --sc-discord: #5865f2;
+            --bg-dark: #080b12;
+            --panel-bg: rgba(13, 20, 36, 0.85);
+            --border-color: #1f3354;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 50% 30%, rgba(0, 100, 200, 0.15) 0%, transparent 70%),
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                radial-gradient(#1a2638 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 20px 20px;
+            color: #d1d9e6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 520px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 35px rgba(0, 162, 255, 0.15), inset 0 0 15px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        .title {
+            font-size: 26px;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-shadow: 0 0 10px var(--sc-blue);
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #6a82a8;
+            margin-bottom: 25px;
+        }
+
+        /* Primary Action: Play Button */
+        .btn-launch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(180deg, #1b4d8a 0%, #0d284a 100%);
+            border: 1px solid var(--sc-blue);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 24px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.25);
+            transition: all 0.2s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .btn-launch:hover {
+            background: linear-gradient(180deg, #2468bc 0%, #123868 100%);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+            transform: translateY(-1px);
+        }
+
+        /* Secondary actions menu */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 18px;
+        }
+
+        .retro-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #111a2c;
+            border: 1px solid #1f3354;
+            color: #8fa5c7;
+            padding: 10px 14px;
+            font-size: 12px;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .retro-btn:hover {
+            background: #16243d;
+            border-color: #3b5f99;
+            color: #ffffff;
+        }
+
+        .retro-btn i {
+            font-size: 13px;
+        }
+
+        /* Specific link styles */
+        .btn-gold {
+            color: var(--sc-gold);
+            border-color: rgba(255, 204, 0, 0.3);
+        }
+
+        .btn-gold:hover {
+            color: #ffffff;
+            border-color: var(--sc-gold);
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+        }
+
+        .action-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .btn-android {
+            background: rgba(46, 204, 113, 0.1);
+            border-color: rgba(46, 204, 113, 0.4);
+            color: var(--sc-green);
+        }
+
+        .btn-android:hover {
+            background: var(--sc-green);
+            color: #000000;
+        }
+
+        .btn-github {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #3b5f99;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #485c7b;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">StarCraft</h1>
+        <div class="subtitle">Web Multiplayer</div>
+
+        <a href="https://starcraft.floospart.serv00.net/" class="btn-launch">
+            <i class="fa-solid fa-play"></i> Launch Sector
+        </a>
+
+        <div class="menu-list">
+            <a href="https://starcraft.floospart.serv00.net/" class="retro-btn">
+                <i class="fa-solid fa-crosshairs"></i> Single Campaign
+            </a>
+
+            <a href="https://starcraft.floospart.serv00.net/" class="retro-btn">
+                <i class="fa-solid fa-book-journal-whills"></i> Armies & Unit Codex
+            </a>
+
+            <a href="https://starcraft.floospart.serv00.net/leaderboard" class="retro-btn btn-gold">
+                <i class="fa-solid fa-trophy"></i> Hall of Commanders
+            </a>
+
+            <div class="action-row">
+                <a href="https://starcraft.floospart.serv00.net/SC-WEB.apk" target="_blank" rel="noopener noreferrer" class="retro-btn btn-android">
+                    <i class="fa-brands fa-android"></i> Android APK
+                </a>
+
+                <a href="https://github.com/vm10k/starcraft-full-html5" target="_blank" rel="noopener noreferrer" class="retro-btn btn-github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Browser RTS Engine &bull; Non-commercial Fan Recreation
+        </div>
+    </div>
+
+</body>
+</html>
