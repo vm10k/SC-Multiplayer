@@ -6,7 +6,7 @@
 
 <br/>
 
-<img width="100%" alt="StarCraft Multiplayer Cosmic Emblem" src="https://github.com/user-attachments/assets/e6c3b83f-8c0e-45f7-a349-7e7d60bb9bf6" />
+<img width="100%" alt="StarCraft Multiplayer Cosmic Emblem (1)" src="https://github.com/user-attachments/assets/e84f9503-57d6-49a9-b864-e2eea688c9b6" />
 
 <br/><br/>
 
