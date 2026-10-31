@@ -10,10 +10,10 @@
 
 <br/><br/>
 
-[![Play Online](https://img.shields.io/badge/PLAY_NOW-ONLINE_IN_BROWSER-00b4d8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://vm10k.github.io/starcraft-web-multiplayer/)
-[![Multiplayer](https://img.shields.io/badge/PVP_LOBBIES-UP_TO_8_PLAYERS-7b2cbf?style=for-the-badge&logo=gamepad&logoColor=white)](https://vm10k.github.io/starcraft-web-multiplayer)
-[![Army Cap](https://img.shields.io/badge/SUPPLY_CAP-100_TROOPS_MAX-10b981?style=for-the-badge&logo=target&logoColor=white)](https://vm10k.github.io/starcraft-web-multiplayer/)
-[![Rankings](https://img.shields.io/badge/LEADERBOARD-HALL_OF_COMMANDERS-f59e0b?style=for-the-badge&logo=speedtest&logoColor=black)](https://vm10k.github.io/starcraft-web-multiplayer/)
+[![Play Online](https://img.shields.io/badge/PLAY_NOW-ONLINE_IN_BROWSER-00b4d8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://vm10k.github.io/SC-Multiplayer/)
+[![Multiplayer](https://img.shields.io/badge/PVP_LOBBIES-UP_TO_8_PLAYERS-7b2cbf?style=for-the-badge&logo=gamepad&logoColor=white)](https://vm10k.github.io/SC-Multiplayer/)
+[![Army Cap](https://img.shields.io/badge/SUPPLY_CAP-100_TROOPS_MAX-10b981?style=for-the-badge&logo=target&logoColor=white)](https://vm10k.github.io/SC-Multiplayer/)
+[![Rankings](https://img.shields.io/badge/LEADERBOARD-HALL_OF_COMMANDERS-f59e0b?style=for-the-badge&logo=speedtest&logoColor=black)](https://vm10k.github.io/SC-Multiplayer/)
 
 <br/>
 
