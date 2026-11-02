@@ -18,7 +18,7 @@
 <br/>
 
 > **Construct. Expand. Annihilate.**  
-> A high-performance, browser-native recreation of the legendary sci-fi RTS. Command Terran, Zerg, or Protoss armies directly in your web browser with synchronized 8-player netplay, custom campaigns, and complete mobile touch controls.
+> A high-performance, browser-native recreation of the legendary sci-fi RTS. Command Terran, Zerg, or Protoss armies directly in your web browser with synchronized 8-player, custom campaigns, and complete mobile touch controls.
 
 </div>
 
